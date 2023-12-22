@@ -2,8 +2,10 @@ import {
   createGlobalTheme,
   createGlobalThemeContract,
 } from "@vanilla-extract/css";
-import { global } from "./tokens/global";
-import { semantic } from "./tokens/semantic";
+
+import * as global from "./tokens/global";
+import * as semantic from "./tokens/semantic";
+
 import { getVarName } from "./utils";
 
 export const vars = createGlobalThemeContract({ global, semantic }, getVarName);

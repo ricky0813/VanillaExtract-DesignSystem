@@ -1,69 +1,63 @@
-const heading = {
-  "heading-01": {
-    fontSize: "var(--global-typographies-fontSize-200)",
-    fontWeight: "var(--global-typographies-fontWeights-medium)",
-    lineHeight: "var(--global-typographies-lineHeight-02)",
+export const heading = {
+  1: {
+    fontSize: "var(--global-typography-fontSize-200)",
+    fontWeight: "var(--global-typography-fontWeights-medium)",
+    lineHeight: "var(--global-typography-lineHeight-2)",
   },
-  "heading-02": {
-    fontSize: "var(--global-typographies-fontSize-300)",
-    fontWeight: "var(--global-typographies-fontWeights-medium)",
-    lineHeight: "var(--global-typographies-lineHeight-03)",
+  2: {
+    fontSize: "var(--global-typography-fontSize-300)",
+    fontWeight: "var(--global-typography-fontWeights-medium)",
+    lineHeight: "var(--global-typography-lineHeight-3)",
   },
-  "heading-03": {
-    fontSize: "var(--global-typographies-fontSize-400)",
-    fontWeight: "var(--global-typographies-fontWeights-semiBold)",
-    lineHeight: "var(--global-typographies-lineHeight-03)",
+  3: {
+    fontSize: "var(--global-typography-fontSize-400)",
+    fontWeight: "var(--global-typography-fontWeights-semiBold)",
+    lineHeight: "var(--global-typography-lineHeight-3)",
   },
-  "heading-04": {
-    fontSize: "var(--global-typographies-fontSize-500)",
-    fontWeight: "var(--global-typographies-fontWeights-semiBold)",
-    lineHeight: "var(--global-typographies-lineHeight-04)",
+  4: {
+    fontSize: "var(--global-typography-fontSize-500)",
+    fontWeight: "var(--global-typography-fontWeights-semiBold)",
+    lineHeight: "var(--global-typography-lineHeight-4)",
   },
-  "heading-05": {
-    fontSize: "var(--global-typographies-fontSize-600)",
-    fontWeight: "var(--global-typographies-fontWeights-semiBold)",
-    lineHeight: "var(--global-typographies-lineHeight-05)",
+  5: {
+    fontSize: "var(--global-typography-fontSize-600)",
+    fontWeight: "var(--global-typography-fontWeights-semiBold)",
+    lineHeight: "var(--global-typography-lineHeight-5)",
   },
-  "heading-06": {
-    fontSize: "var(--global-typographies-fontSize-700)",
-    fontWeight: "var(--global-typographies-fontWeights-semiBold)",
-    lineHeight: "var(--global-typographies-lineHeight-06)",
+  6: {
+    fontSize: "var(--global-typography-fontSize-700)",
+    fontWeight: "var(--global-typography-fontWeights-semiBold)",
+    lineHeight: "var(--global-typography-lineHeight-6)",
   },
-  "heading-07": {
-    fontSize: "var(--global-typographies-fontSize-800)",
-    fontWeight: "var(--global-typographies-fontWeights-semiBold)",
-    lineHeight: "var(--global-typographies-lineHeight-07)",
-  },
-} as const;
-
-const body = {
-  "body-01": {
-    fontSize: "var(--global-typographies-fontSize-200)",
-    fontWeight: "var(--global-typographies-fontWeights-regular)",
-    lineHeight: "var(--global-typographies-lineHeight-02)",
-  },
-  "body-02": {
-    fontSize: "var(--global-typographies-fontSize-300)",
-    fontWeight: "var(--global-typographies-fontWeights-regular)",
-    lineHeight: "var(--global-typographies-lineHeight-03)",
+  7: {
+    fontSize: "var(--global-typography-fontSize-800)",
+    fontWeight: "var(--global-typography-fontWeights-semiBold)",
+    lineHeight: "var(--global-typography-lineHeight-7)",
   },
 } as const;
 
-const caption = {
-  "caption-01": {
-    fontSize: "var(--global-typographies-fontSize-100)",
-    fontWeight: "var(--global-typographies-fontWeights-regular)",
-    lineHeight: "var(--global-typographies-lineHeight-01)",
+export const body = {
+  1: {
+    fontSize: "var(--global-typography-fontSize-200)",
+    fontWeight: "var(--global-typography-fontWeights-regular)",
+    lineHeight: "var(--global-typography-lineHeight-2)",
   },
-  "caption-02": {
-    fontSize: "var(--global-typographies-fontSize-200)",
-    fontWeight: "var(--global-typographies-fontWeights-regular)",
-    lineHeight: "var(--global-typographies-lineHeight-02)",
+  2: {
+    fontSize: "var(--global-typography-fontSize-300)",
+    fontWeight: "var(--global-typography-fontWeights-regular)",
+    lineHeight: "var(--global-typography-lineHeight-3)",
   },
 } as const;
 
-export const typographies = {
-  ...heading,
-  ...body,
-  ...caption,
-};
+export const caption = {
+  1: {
+    fontSize: "var(--global-typography-fontSize-100)",
+    fontWeight: "var(--global-typography-fontWeights-regular)",
+    lineHeight: "var(--global-typography-lineHeight-1)",
+  },
+  2: {
+    fontSize: "var(--global-typography-fontSize-200)",
+    fontWeight: "var(--global-typography-fontWeights-regular)",
+    lineHeight: "var(--global-typography-lineHeight-2)",
+  },
+} as const;

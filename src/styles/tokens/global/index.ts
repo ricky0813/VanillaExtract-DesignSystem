@@ -1,5 +1,3 @@
-import { colors } from "./colors";
-import { typographies } from "./typography";
-// export * as $layout from './layout';
-
-export const global = { colors, typographies };
+export { colors } from "./colors";
+export * as typography from "./typography";
+export { spacing } from "./spacing";

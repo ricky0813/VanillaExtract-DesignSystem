@@ -1,8 +1,8 @@
-export const fonts = {
+export const font = {
   sans: "Pretendard, sans-serif",
 } as const;
 
-export const fontWeights = {
+export const fontWeight = {
   thin: "100",
   extraLight: "200",
   light: "300",
@@ -14,30 +14,23 @@ export const fontWeights = {
   black: "900",
 } as const;
 
-export const fontSizes = {
-  "fontSize-100": "11px",
-  "fontSize-200": "12px",
-  "fontSize-300": "14px",
-  "fontSize-400": "16px",
-  "fontSize-500": "20px",
-  "fontSize-600": "24px",
-  "fontSize-700": "32px",
-  "fontSize-800": "40px",
+export const fontSize = {
+  100: "11px",
+  200: "12px",
+  300: "14px",
+  400: "16px",
+  500: "20px",
+  600: "24px",
+  700: "32px",
+  800: "40px",
 } as const;
 
-export const lineHeights = {
-  "lineHeight-01": "16px",
-  "lineHeight-02": "18px",
-  "lineHeight-03": "24px",
-  "lineHeight-04": "28px",
-  "lineHeight-05": "34px",
-  "lineHeight-06": "40px",
-  "lineHeight-07": "52px",
+export const lineHeight = {
+  1: "16px",
+  2: "18px",
+  3: "24px",
+  4: "28px",
+  5: "34px",
+  6: "40px",
+  7: "52px",
 } as const;
-
-export const typographies = {
-  fonts,
-  fontWeights,
-  ...fontSizes,
-  ...lineHeights,
-};
