@@ -1,5 +1,5 @@
 export const font = {
-  sans: "Pretendard, sans-serif",
+  sans: `Pretendard, sans-serif`,
 } as const;
 
 export const fontWeight = {

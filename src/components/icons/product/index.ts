@@ -1,0 +1,2 @@
+
+export { IconCreditCard } from './IconCreditCard'

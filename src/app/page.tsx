@@ -1,20 +1,27 @@
 import Image from "next/image";
 import { main } from "./app.css";
-import Button from "@/components/button/Button";
 import { style } from "@vanilla-extract/css";
 import { sprinkles } from "@/styles/sprinkles.css";
 import { vars } from "@/styles/theme.css";
+import {
+  IconCreditCard,
+  IconShoppingBagFilled,
+  IconShoppingBagOutline,
+} from "@/components/icons";
 
 export default function Home() {
   return (
     <main>
       <div className={main}>
-        <Button
-          variant="primary"
-          text="버튼"
-          className={sprinkles({ color: "primary-100" })}
-          // color="red"
+        <IconShoppingBagOutline
+          size="24px"
+          fill={vars.global.colors.primary[50]}
         />
+        <IconShoppingBagFilled
+          size="24px"
+          fill={vars.global.colors.primary[50]}
+        />
+        <IconCreditCard size="32px" fill={vars.global.colors.blue[30]} />
       </div>
     </main>
   );

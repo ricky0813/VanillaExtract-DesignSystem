@@ -1,0 +1,282 @@
+{
+  "fontFamilies": {
+    "pretendard": {
+      "value": "Pretendard",
+      "type": "fontFamilies"
+    }
+  },
+  "lineHeights": {
+    "0": {
+      "value": 18,
+      "type": "lineHeights"
+    },
+    "1": {
+      "value": 24,
+      "type": "lineHeights"
+    },
+    "2": {
+      "value": 28,
+      "type": "lineHeights"
+    },
+    "3": {
+      "value": 34,
+      "type": "lineHeights"
+    },
+    "4": {
+      "value": 40,
+      "type": "lineHeights"
+    },
+    "5": {
+      "value": 52,
+      "type": "lineHeights"
+    },
+    "6": {
+      "value": 16,
+      "type": "lineHeights"
+    }
+  },
+  "fontWeights": {
+    "pretendard-0": {
+      "value": "Medium",
+      "type": "fontWeights"
+    },
+    "pretendard-1": {
+      "value": "SemiBold",
+      "type": "fontWeights"
+    },
+    "pretendard-2": {
+      "value": "Regular",
+      "type": "fontWeights"
+    }
+  },
+  "fontSize": {
+    "0": {
+      "value": 11,
+      "type": "fontSizes"
+    },
+    "1": {
+      "value": 12,
+      "type": "fontSizes"
+    },
+    "2": {
+      "value": 14,
+      "type": "fontSizes"
+    },
+    "3": {
+      "value": 16,
+      "type": "fontSizes"
+    },
+    "4": {
+      "value": 20,
+      "type": "fontSizes"
+    },
+    "5": {
+      "value": 24,
+      "type": "fontSizes"
+    },
+    "6": {
+      "value": 32,
+      "type": "fontSizes"
+    },
+    "7": {
+      "value": 40,
+      "type": "fontSizes"
+    }
+  },
+  "letterSpacing": {
+    "0": {
+      "value": 0,
+      "type": "letterSpacing"
+    }
+  },
+  "paragraphSpacing": {
+    "0": {
+      "value": 0,
+      "type": "paragraphSpacing"
+    }
+  },
+  "Heading": {
+    "heading-01": {
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": "Medium",
+        "lineHeight": 18,
+        "fontSize": 12,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "paragraphIndent": "0px",
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "heading-02": {
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": "Medium",
+        "lineHeight": 24,
+        "fontSize": 14,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "paragraphIndent": "0px",
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "heading-03": {
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": "SemiBold",
+        "lineHeight": 24,
+        "fontSize": 16,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "paragraphIndent": "0px",
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "heading-04": {
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": "SemiBold",
+        "lineHeight": 28,
+        "fontSize": 20,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "paragraphIndent": "0px",
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "heading-05": {
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": "SemiBold",
+        "lineHeight": 34,
+        "fontSize": 24,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "paragraphIndent": "0px",
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "heading-06": {
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": "SemiBold",
+        "lineHeight": 40,
+        "fontSize": 32,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "paragraphIndent": "0px",
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "heading-07": {
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": "SemiBold",
+        "lineHeight": 52,
+        "fontSize": 40,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "paragraphIndent": "0px",
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    }
+  },
+  "Body": {
+    "body-01": {
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": "Regular",
+        "lineHeight": 18,
+        "fontSize": 12,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "paragraphIndent": "0px",
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "body-02": {
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": "Regular",
+        "lineHeight": 24,
+        "fontSize": 14,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "paragraphIndent": "0px",
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    }
+  },
+  "Caption": {
+    "caption-01": {
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": "Regular",
+        "lineHeight": 16,
+        "fontSize": 11,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "paragraphIndent": "0px",
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "caption-02": {
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": "Regular",
+        "lineHeight": 18,
+        "fontSize": 12,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "paragraphIndent": "0px",
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    }
+  },
+  "textCase": {
+    "none": {
+      "value": "none",
+      "type": "textCase"
+    }
+  },
+  "textDecoration": {
+    "none": {
+      "value": "none",
+      "type": "textDecoration"
+    }
+  },
+  "paragraphIndent": {
+    "0": {
+      "value": "0px",
+      "type": "dimension"
+    }
+  },
+  "tokenSetOrder": {
+    "0": {
+      "value": "test",
+      "type": "other"
+    }
+  }
+}
