@@ -7,7 +7,8 @@ import {
   IconCreditCard,
   IconShoppingBagFilled,
   IconShoppingBagOutline,
-} from "@/components/icons";
+} from "@/components/icons/system";
+import { styleClass } from "@/components/test/test.css";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           fill={vars.global.colors.primary[50]}
         />
         <IconCreditCard size="32px" fill={vars.global.colors.blue[30]} />
+        <div className={styleClass} />
       </div>
     </main>
   );

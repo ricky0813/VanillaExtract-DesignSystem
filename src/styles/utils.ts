@@ -1,5 +1,9 @@
 export const getVarName = (_value: string | null, path: string[]) => {
-  return path.join("-").replace(".", "_").replace("/", "__");
+  return path
+    .filter((name) => name.trim() !== "")
+    .join("-")
+    .replace(".", "_")
+    .replace("/", "__");
 };
 
 export const transformObject = <R extends string>(
@@ -10,7 +14,9 @@ export const transformObject = <R extends string>(
 
     return ObjectKeys.reduce((acc, key) => {
       const newKey = prefix
-        ? (`${prefix}-${String(key)}` as R)
+        ? key === ""
+          ? (prefix as R)
+          : (`${prefix}-${String(key)}` as R)
         : (String(key) as R);
       if (typeof obj[key] === "object" && obj[key] !== null) {
         Object.assign(acc, flattenObject(obj[key], newKey));
@@ -24,11 +30,26 @@ export const transformObject = <R extends string>(
   return flattenObject(originalObject);
 };
 
+// export type FlattenObjectKeys<
+//   T extends Record<string | number, unknown>,
+//   P extends string = ""
+// > = {
+//   [K in keyof T]: T[K] extends Record<string | number, unknown>
+//     ? FlattenObjectKeys<T[K], `${P}${K & (string | string)}-`>
+//     : `${P}${K & (string | number)}`;
+// }[keyof T];
+
 export type FlattenObjectKeys<
   T extends Record<string | number, unknown>,
   P extends string = ""
 > = {
   [K in keyof T]: T[K] extends Record<string | number, unknown>
-    ? FlattenObjectKeys<T[K], `${P}${K & (string | string)}-`>
-    : `${P}${K & (string | number)}`;
+    ? P extends ""
+      ? FlattenObjectKeys<T[K], `${K & (string | string)}`>
+      : FlattenObjectKeys<T[K], `${P}-${K & (string | string)}`>
+    : P extends ""
+    ? `${K & (string | number)}`
+    : K extends ""
+    ? `${P}`
+    : `${P}-${K & (string | number)}`;
 }[keyof T];

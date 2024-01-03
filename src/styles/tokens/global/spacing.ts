@@ -18,8 +18,6 @@ export const spacing = {
   2000: "80px",
 } as const;
 
-const wrappedSpace = {
-  spacing,
-};
+const wrappedSpace = { spacing };
 
 export type Space = FlattenObjectKeys<typeof wrappedSpace>;
