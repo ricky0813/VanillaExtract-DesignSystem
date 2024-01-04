@@ -1,8 +1,9 @@
 import { FlattenObjectKeys, transformObject } from "./../../styles/utils";
-import { createTheme, createThemeContract } from "@vanilla-extract/css";
+import { createTheme, createThemeContract, style } from "@vanilla-extract/css";
 import * as button from "./tokens/colors";
 import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
 import { recipe } from "@vanilla-extract/recipes";
+import { sprinkles } from "@/styles/sprinkles.css";
 
 const themeObj = {
   colors: {
@@ -34,4 +35,24 @@ const buttonColorProperties = defineProperties({
 
 const buttonSprinkles = createSprinkles(buttonColorProperties);
 
-const buttonClass = recipe({});
+const base = style([sprinkles({ rounded: "radius-100" })]);
+
+const buttonClass = recipe({
+  base: base,
+  variants: {
+    buttonType: {
+      primary: [sprinkles({})],
+      secondary: {},
+      tertiary: {},
+      contrast: {},
+    },
+    size: {
+      sm: [sprinkles({ paddingX: "spacing-250" })],
+      md: [sprinkles({ paddingX: "spacing-400" })],
+      lg: [sprinkles({ paddingX: "spacing-600" })],
+    },
+    iconOnly: {
+      true: sprinkles({ paddingX: "spacing-0" }),
+    },
+  },
+});

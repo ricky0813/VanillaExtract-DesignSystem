@@ -30,6 +30,12 @@ const colorProperties = defineProperties({
     gap: { ...space, none: "none" },
     margin: space,
   },
+  conditions: {
+    common: {},
+    hover: { selector: "&:hover" },
+    focus: { selector: "&:focus" },
+    active: { selector: "&:active" },
+  },
   shorthands: {
     rounded: ["borderRadius"],
     padding: ["paddingTop", "paddingBottom", "paddingLeft", "paddingRight"],
@@ -39,6 +45,7 @@ const colorProperties = defineProperties({
     marginX: ["marginLeft", "marginRight"],
     marginY: ["marginTop", "marginBottom"],
   },
+  defaultCondition: "common",
 });
 
 export const sprinkles = createSprinkles(colorProperties);

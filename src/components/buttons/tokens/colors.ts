@@ -18,7 +18,9 @@ export const secondary = {
 } as const;
 
 export const tertiary = {
-  "": "var(--global-colors-primary-50)",
+  text: "var(--global-colors-primary-50)",
+  border: "var(--global-colors-primary-50)",
+  bg: "var(--global-colors-white)",
   hover: "var(--global-colors-primary-10)",
   active: "var(--global-colors-primary-20)",
 } as const;
@@ -41,7 +43,9 @@ export const danger = {
     active: "var(--global-colors-red-80)",
   },
   tertiary: {
-    "": "var(--global-colors-red-60)",
+    text: "var(--global-colors-red-60)",
+    border: "var(--global-colors-red-60)",
+    bg: "var(--global-colors-white)",
     hover: "var(--global-colors-red-10)",
     active: "var(--global-colors-red-20)",
   },
